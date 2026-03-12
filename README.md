@@ -173,6 +173,6 @@ Citation-based recommendations
 
 # Author
 
-Kartik Sharma
+**Kartik Sharma**
 B.Tech CSE
 Galgotias University
