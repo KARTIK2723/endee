@@ -75,11 +75,11 @@ data/
 
 ## Tech Stack
 
-1.Python
-2.Streamlit
-3.Sentence Transformers
-4.NumPy
-5.Vector Similarity Search
+1. Python
+2. Streamlit
+3. Sentence Transformers
+4. NumPy
+5. Vector Similarity Search
 
 ---
 
