@@ -73,7 +73,7 @@ data/
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 Python
 Streamlit
@@ -83,17 +83,13 @@ Vector Similarity Search
 
 ---
 
-# System Architecture
+## System Architecture
 
-User Query
-↓
-SentenceTransformer Embedding
-↓
-Vector Similarity Search
-↓
-Top Matching Research Papers
-↓
-Displayed via Streamlit UI
+1. User enters a research query
+2. Query is converted into an embedding using **SentenceTransformers**
+3. Vector similarity search is performed
+4. Most relevant research papers are retrieved
+5. Results are displayed in the **Streamlit UI**
 
 ---
 
