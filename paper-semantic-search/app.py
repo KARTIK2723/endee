@@ -1,19 +1,26 @@
 import streamlit as st
 import json
 import numpy as np
+import os
 from sentence_transformers import SentenceTransformer
 
 st.set_page_config(page_title="AI Research Paper Semantic Search", layout="wide")
 
-
 # Load model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
+# Get absolute path of this script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Dataset path
+data_path = os.path.join(BASE_DIR, "data", "papers_with_embeddings.json")
+
 # Load papers
-with open("data/papers_with_embeddings.json") as f:
+with open(data_path) as f:
     papers = json.load(f)
 
 st.title("🔎 AI Research Paper Semantic Search")
+
 st.markdown(
 """
 Search academic papers using **semantic similarity** instead of keywords.  
@@ -21,9 +28,8 @@ Powered by **vector embeddings** and designed to integrate with the **Endee vect
 """
 )
 
-#st.write("Search academic papers using **semantic similarity** instead of keywords.")
-
 query = st.text_input("Enter your research topic")
+
 st.info("Example searches: deep learning healthcare, transformers NLP, reinforcement learning robotics")
 
 def cosine_similarity(a, b):
