@@ -171,7 +171,7 @@ Citation-based recommendations
 
 ---
 
-# Author
+## Author
 
 **Kartik Sharma**
 B.Tech CSE
