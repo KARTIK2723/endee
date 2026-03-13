@@ -103,7 +103,7 @@ paper-semantic-search
 ├── scripts
 │   ├── prepare_dataset.py
 │   ├── generate_embeddings.py
-│   └── upload_to_endee.py
+│   └── search.py
 │
 └── data
     ├── papers.csv
